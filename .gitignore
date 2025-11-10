@@ -5,16 +5,7 @@ Thumbs.db
 .vs/
 obj/
 
-!/1336OS_Code/bin
-!/1336OS_Code/build
-!/1336OS_Code/decoda
-/1336OS_Code/lib
-!/1336OS_Code/media
-!/1336OS_Code/premake
-!/1336OS_Code/src/
-!/1336OS_Code/tools/
-
-/1336OS_Code/bin/*/*/*.exe
+/bin/*/*/*.exe
 
 # Ignore files
 *.obj
