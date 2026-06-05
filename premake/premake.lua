@@ -1,31 +1,39 @@
---[[
-  Copyright (c) 2013 David Young dayoung@goliathdesigns.com
+--------------------------------------------------------------------------------
+-- Demo application definitions
+--------------------------------------------------------------------------------
+SandboxDemos = {
+	-- Sandbox showing all the available assets.
+	"chapter_1_introduction",
+	
+	-- Steering behavior examples.
+	"chapter_2_movement",
+	
+	-- Animation state machine examples.
+	"chapter_3_animation",
+	
+	-- Decisions and animation control techniques.
+	"chapter_4_mind_body",
+	
+	-- Navigation mesh generation and path finding.
+	"chapter_5_navigation",
+	
+	-- Decision making examples.
+	"chapter_6_decision_making",
+	
+	-- Knowledge representation.
+	"chapter_7_knowledge",
+	
+	-- Sensory perception.
+	"chapter_8_perception",
+	
+	-- Tactics and spacial analysis.
+	"chapter_9_tactics",
 
-  This software is provided 'as-is', without any express or implied
-  warranty. In no event will the authors be held liable for any damages
-  arising from the use of this software.
-
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-
-  1. The origin of this software must not be misrepresented; you must not
-  claim that you wrote the original software. If you use this software
-  in a product, an acknowledgment in the product documentation would be
-  appreciated but is not required.
-
-  2. Altered source versions must be plainly marked as such, and must not be
-  misrepresented as being the original software.
-
-  3. This notice may not be removed or altered from any source
-  distribution.
-]]
-
---require "SandboxDemos"
-dofile("SandboxDemos.lua");
+	"my_sandbox"
+};
 
 solution( "Learning Game AI Programming" )
-	location( "../build/" )
+	location( "../build/" .. _ACTION )
 	configurations( { "Debug", "Release" } )
 	platforms( { "x32", "x64" } )
 
@@ -59,8 +67,8 @@ solution( "Learning Game AI Programming" )
 
 -- platform(windows/linux) specific configurations
 	configuration( "windows" )
--- fatal linker warnings
-		linkoptions ( { "/WX" } )
+-- do not cause linker warnings to be fatal
+--	linkoptions ( { "/WX-" } )
 	configuration( "linux" )
 	configuration( "*" )
 
@@ -119,7 +127,7 @@ solution( "Learning Game AI Programming" )
 local function CreateSandboxProject( projectName )
 	project( projectName )
 		kind( "WindowedApp" )
-		location( "../build/projects/%{prj.name}" )
+		location( "../build/" .. _ACTION .. "/projects/%{prj.name}" )
 		debugdir( "$(OutDir)" )
 -- increase precompiled header allocation limit
 		buildoptions( { "/Zm256" } )
@@ -168,22 +176,22 @@ local function CreateSandboxProject( projectName )
 			linkoptions( "OgreWin32Resources.res" )
 		configuration( { "windows", "x32", "Debug" } )
 			libdirs( {
-				"\"../build/projects/ogre3d/obj/x32/Debug\"",
+				"\"../build/" .. _ACTION .. "/projects/ogre3d/obj/x32/Debug\"",
 				"\"$(DXSDK_DIR)/Lib/x86\"",
 			} )
 		configuration( { "windows", "x32", "Release" } )
 			libdirs( {
-				"\"../build/projects/ogre3d/obj/x32/Release\"",
+				"\"../build/" .. _ACTION .. "/projects/ogre3d/obj/x32/Release\"",
 				"\"$(DXSDK_DIR)/Lib/x86\"",
 			} )
 		configuration( { "windows", "x64", "Debug" } )
 			libdirs( {
-				"\"../build/projects/ogre3d/obj/x64/Debug\"",
+				"\"../build/" .. _ACTION .. "/projects/ogre3d/obj/x64/Debug\"",
 				"\"$(DXSDK_DIR)/Lib/x64\""
 			} )
 		configuration( { "windows", "x64", "Release" } )
 			libdirs( {
-				"\"../build/projects/ogre3d/obj/x64/Release\"",
+				"\"../build/" .. _ACTION .. "/projects/ogre3d/obj/x64/Release\"",
 				"\"$(DXSDK_DIR)/Lib/x64\""
 			} )
 		configuration( "*" )
@@ -216,7 +224,7 @@ end
 	group( "Framework" )
 	project( "demo_framework" )
 		kind( "StaticLib" )
-		location( "../build/projects/demo_framework" )
+		location( "../build/"..  _ACTION .. "/projects/demo_framework" )
 		pchheader( "PrecompiledHeaders.h" )
 		pchsource( "../src/demo_framework/src/PrecompiledHeaders.cpp" )
 		buildoptions( { "/Zm256" } )
@@ -249,7 +257,7 @@ end
 -- bullet collision v2.81 revision 2613
 	project( "bullet_collision" )
 		kind( "StaticLib" )
-		location( "../build/projects/bullet_collision" )
+		location( "../build/" ..  _ACTION .. "/projects/bullet_collision" )
 		buildoptions( {
 			"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
 			"/wd\"4512\"", "/wd\"4267\""
@@ -271,7 +279,7 @@ end
 -- bullet dynamics v2.81 revision 2613
 	project( "bullet_dynamics" )
 		kind( "StaticLib" )
-		location( "../build/projects/bullet_dynamics" )
+		location( "../build/" ..  _ACTION .. "/projects/bullet_dynamics" )
 		buildoptions( {
 			"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
 			"/wd\"4512\"", "/wd\"4267\"", "/wd\"4305\""
@@ -293,7 +301,7 @@ end
 -- bullet linearmath v2.81 revision 2613
 	project( "bullet_linearmath" )
 		kind( "StaticLib" )
-		location( "../build/projects/bullet_linearmath" )
+		location( "../build/" ..  _ACTION .. "/projects/bullet_linearmath" )
 		buildoptions( {
 			"/wd\"4127\"", "/wd\"4245\"", "/wd\"4244\"", "/wd\"4267\"",
 			"/wd\"4701\""
@@ -310,14 +318,14 @@ end
 -- detour v1.4 static library
 	project( "detour" )
 		kind( "StaticLib" )
-		location( "../build/projects/detour" )
+		location( "../build/" ..  _ACTION .. "/projects/detour" )
 		files( { "../src/detour/include/**.h", "../src/detour/src/**.cpp" } )
 		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- freeimage v3.15.4 static library
 	project( "freeimage" )
 		kind( "StaticLib" )
-		location( "../build/projects/freeimage" )
+		location( "../build/" ..  _ACTION .. "/projects/freeimage" )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4127\"", "/wd\"4189\"", "/wd\"4244\"",
 			"/wd\"4611\"", "/wd\"4389\"", "/wd\"4324\"", "/wd\"4702\"",
@@ -352,7 +360,7 @@ end
 -- freetype v2.4.12 static library
 	project( "freetype" )
 		kind( "StaticLib" )
-		location( "../build/projects/freetype" )
+		location( "../build/" ..  _ACTION .. "/projects/freetype" )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4245\"", "/wd\"4701\"",
 			"/wd\"4267\"", "/wd\"4324\"", "/wd\"4306\"", "/wd\"4703\""
@@ -415,7 +423,7 @@ end
 -- gorilla_audio v0.3.0 static library
 	project( "gorilla_audio" )
 		kind( "StaticLib" )
-		location( "../build/projects/gorilla_audio" )
+		location( "../build/" ..  _ACTION .. "/projects/gorilla_audio" )
 		includedirs( {
 			"../src/libogg/include/",
 			"../src/libvorbis/include/"
@@ -437,7 +445,7 @@ end
 -- libjpeg 8d static library
 	project( "libjpeg" )
 		kind( "StaticLib" )
-		location( "../build/projects/libjpeg" )
+		location( "../build/" ..  _ACTION .. "/projects/libjpeg" )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\""
 		} )
@@ -447,14 +455,14 @@ end
 -- libogg v1.3.1 static library
 	project( "libogg" )
 		kind( "StaticLib" )
-		location( "../build/projects/libogg" )
+		location( "../build/" ..  _ACTION .. "/projects/libogg" )
 		files( { "../src/libogg/include/**.h", "../src/libogg/src/**.c" } )
 		defines( { "WIN32" } )
 
 -- libopenjpeg v1.5.1 static library
 	project( "libopenjpeg" )
 		kind( "StaticLib" )
-		location( "../build/projects/libopenjpeg" )
+		location( "../build/" ..  _ACTION .. "/projects/libopenjpeg" )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\"",
 			"/wd\"4701\"", "/wd\"4706\""
@@ -468,7 +476,7 @@ end
 -- libpng v1.5.13 static library
 	project( "libpng" )
 		kind( "StaticLib" )
-		location( "../build/projects/libpng" )
+		location( "../build/" ..  _ACTION .. "/projects/libpng" )
 		buildoptions( { "/wd\"4127\"" } )
 		includedirs( { "../src/zlib/include/" } )
 		files( { "../src/libpng/include/**.h", "../src/libpng/src/**.c" } )
@@ -477,7 +485,7 @@ end
 -- libraw v1.5.13 static library
 	project( "libraw" )
 		kind( "StaticLib" )
-		location( "../build/projects/libraw" )
+		location( "../build/" ..  _ACTION .. "/projects/libraw" )
 		buildoptions( {
 			"/wd\"4244\"", "/wd\"4189\"", "/wd\"4101\"", "/wd\"4706\"",
 			"/wd\"4100\"", "/wd\"4018\"", "/wd\"4305\"", "/wd\"4309\"",
@@ -496,7 +504,7 @@ end
 -- libtiff4 v4.0.3 static library
 	project( "libtiff4" )
 		kind( "StaticLib" )
-		location( "../build/projects/libtiff4" )
+		location( "../build/" ..  _ACTION .. "/projects/libtiff4" )
 		buildoptions( {
 			"/wd\"4127\"", "/wd\"4244\"", "/wd\"4706\"", "/wd\"4702\"",
 			"/wd\"4701\"", "/wd\"4018\"", "/wd\"4306\"", "/wd\"4305\"",
@@ -512,7 +520,7 @@ end
 -- libvorbis v1.3.4 static library
 	project( "libvorbis" )
 		kind( "StaticLib" )
-		location( "../build/projects/libvorbis" )
+		location( "../build/" ..  _ACTION .. "/projects/libvorbis" )
 		includedirs( { "../src/libogg/include/" } )
 		buildoptions( {
 			"/wd\"4244\"", "/wd\"4127\"", "/wd\"4706\"", "/wd\"4305\"",
@@ -530,7 +538,7 @@ end
 -- lua v5.1.5 static library
 	project( "lua" )
 		kind( "StaticLib" )
-		location( "../build/projects/lua" )
+		location( "../build/" ..  _ACTION .. "/projects/lua" )
 		buildoptions( {
 			"/wd\"4244\"", "/wd\"4702\"", "/wd\"4324\"", "/wd\"4334\""
 		} )
@@ -544,7 +552,7 @@ end
 -- ogre3d v1.8.1 static library
 	project( "ogre3d" )
 		kind( "StaticLib" )
-		location( "../build/projects/ogre3d" )
+		location( "../build/" ..  _ACTION .. "/projects/ogre3d" )
 		pchheader( "OgreStableHeaders.h" )
 		pchsource( "../src/ogre3d/src/OgrePrecompiledHeaders.cpp" )
 		buildoptions( {
@@ -587,7 +595,7 @@ end
 -- ogre3d direct3d9 plugin v1.8.1 static library
 	project( "ogre3d_direct3d9" )
 		kind( "StaticLib" )
-		location( "../build/projects/ogre3d_direct3d9" )
+		location( "../build/" ..  _ACTION .. "/projects/ogre3d_direct3d9" )
 		includedirs( { "../src/ogre3d/include/" } )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
@@ -611,7 +619,7 @@ end
 -- ogre3d gorilla ui "master" static library
 	project( "ogre3d_gorilla" )
 		kind( "StaticLib" )
-		location( "../build/projects/ogre3d_gorilla" )
+		location( "../build/" ..  _ACTION .. "/projects/ogre3d_gorilla" )
 		includedirs( { "../src/" } )
 		buildoptions( {
 			"/Zm198"
@@ -626,7 +634,7 @@ end
 -- ogre3d particlefx plugin v1.8.1 static library
 	project( "ogre3d_particlefx" )
 		kind( "StaticLib" )
-		location( "../build/projects/ogre3d_particlefx" )
+		location( "../build/" ..  _ACTION .. "/projects/ogre3d_particlefx" )
 		includedirs( { "../src/ogre3d/include/" } )
 		buildoptions( {
 			"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
@@ -650,7 +658,7 @@ end
 -- ogre3d procedural v0.2 static library
 	project( "ogre3d_procedural" )
 		kind( "StaticLib" )
-		location( "../build/projects/ogre3d_procedural" )
+		location( "../build/" ..  _ACTION .. "/projects/ogre3d_procedural" )
 		pchheader( "ProceduralStableHeaders.h" )
 		pchsource( "../src/ogre3d_procedural/src/ProceduralPrecompiledHeaders.cpp" )
 		includedirs( { "../src/ogre3d/include/" } )
@@ -668,7 +676,7 @@ end
 -- ois v1.3 static library
 	project( "ois" )
 		kind( "StaticLib" )
-		location( "../build/projects/ois" )
+		location( "../build/" ..  _ACTION .. "/projects/ois" )
 		buildoptions( {
 			"/wd\"4512\"", "/wd\"4100\"", "/wd\"4189\""
 		} )
@@ -680,7 +688,7 @@ end
 -- openexr v1.5.13 static library
 	project( "openexr" )
 		kind( "StaticLib" )
-		location( "../build/projects/openexr" )
+		location( "../build/" ..  _ACTION .. "/projects/openexr" )
 		buildoptions( {
 			"/wd\"4244\"", "/wd\"4305\"", "/wd\"4100\"", "/wd\"4127\"",
 			"/wd\"4245\"", "/wd\"4512\"", "/wd\"4706\"", "/wd\"4267\"",
@@ -702,7 +710,7 @@ end
 -- opensteer revision 190 static library
 	project( "opensteer" )
 		kind( "StaticLib" )
-		location( "../build/projects/opensteer" )
+		location( "../build/" ..  _ACTION .. "/projects/opensteer" )
 		buildoptions( { "/wd\"4701\"", "/wd\"4244\"", "/wd\"4100\"" } )
 		files( {
 			"../src/opensteer/include/**.h",
@@ -714,14 +722,14 @@ end
 -- recast v1.4 static library
 	project( "recast" )
 		kind( "StaticLib" )
-		location( "../build/projects/recast" )
+		location( "../build/" ..  _ACTION .. "/projects/recast" )
 		files( { "../src/recast/include/**.h", "../src/recast/src/**.cpp" } )
 		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- zlib v1.2.8 static library
 	project( "zlib" )
 		kind( "StaticLib" )
-		location( "../build/projects/zlib" )
+		location( "../build/" ..  _ACTION .. "/projects/zlib" )
 		buildoptions( {
 			"/wd\"4131\"", "/wd\"4996\"", "/wd\"4244\"", "/wd\"4127\""
 		} )
@@ -731,7 +739,7 @@ end
 -- zziplib v0.13.62 static library
 	project( "zzip" )
 		kind( "StaticLib" )
-		location( "../build/projects/zzip" )
+		location( "../build/" ..  _ACTION .. "/projects/zzip" )
 		buildoptions( {
 			"/wd\"4127\"", "/wd\"4996\"", "/wd\"4706\"", "/wd\"4244\"",
 			"/wd\"4267\"", "/wd\"4028\"", "/wd\"4305\""
