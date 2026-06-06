@@ -13,7 +13,7 @@ rmdir /S /Q ..\..\lib
 rem
 rem create new solution/workspace files
 rem
-rem premake5-dev-8693as0947d1 --os=windows --file=premake.lua vs2008 %ARGUMENTS%
-rem premake5-dev-8693as0947d1 --os=windows --file=premake.lua vs2010 %ARGUMENTS%
-rem premake5-dev-8693as0947d1 --os=windows --file=premake.lua vs2012 %ARGUMENTS%
-premake5-dev-8693as0947d1 --os=windows --file=premake.lua vs2013
+rem premake5-dev-8693as0947d1.exe --os=windows --file=learning-game-ai-prg-w-lua.lua vs2008
+rem premake5-dev-8693as0947d1.exe --os=windows --file=learning-game-ai-prg-w-lua.lua vs2010
+rem premake5-dev-8693as0947d1.exe --os=windows --file=learning-game-ai-prg-w-lua.lua vs2012
+premake5-dev-8693as0947d1.exe --os=windows --file=learning-game-ai-prg-w-lua.lua vs2013
