@@ -24,7 +24,7 @@
 #ifndef CHAPTER_4_ANIMATION_DEMO_ANIMATION_H
 #define CHAPTER_4_ANIMATION_DEMO_ANIMATION_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoMindBody : public SandboxApplication
 {

@@ -24,7 +24,7 @@
 #ifndef CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_H
 #define CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoMovement : public SandboxApplication
 {

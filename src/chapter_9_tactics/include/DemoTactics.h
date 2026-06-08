@@ -24,7 +24,7 @@
 #ifndef CHAPTER_9_TACTICS_H
 #define CHAPTER_9_TACTICS_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoTactics : public SandboxApplication
 {

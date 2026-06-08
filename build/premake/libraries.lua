@@ -1,523 +1,509 @@
 -- bullet collision v2.81 revision 2613
-	project( "bullet_collision" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/bullet_collision" )
-		buildoptions( {
-			"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
-			"/wd\"4512\"", "/wd\"4267\""
-		} )
-		includedirs( {
-			"../../src/bullet_collision/include/BulletCollision/BroadphaseCollision",
-			"../../src/bullet_collision/include/BulletCollision/CollisionDispatch",
-			"../../src/bullet_collision/include/BulletCollision/CollisionShapes",
-			"../../src/bullet_collision/include/BulletCollision/Gimpact",
-			"../../src/bullet_collision/include/BulletCollision/NarrowPhaseCollision",
-			"../../src/bullet_linearmath/include"
-		} )
-		files( {
-			"../../src/bullet_collision/include/**.h",
-			"../../src/bullet_collision/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "bullet_collision" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/bullet_collision" )
+	buildoptions( {
+		"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
+		"/wd\"4512\"", "/wd\"4267\""
+	} )
+	includedirs( {
+		"../../src/bullet_collision/include/BulletCollision/BroadphaseCollision",
+		"../../src/bullet_collision/include/BulletCollision/CollisionDispatch",
+		"../../src/bullet_collision/include/BulletCollision/CollisionShapes",
+		"../../src/bullet_collision/include/BulletCollision/Gimpact",
+		"../../src/bullet_collision/include/BulletCollision/NarrowPhaseCollision",
+		"../../src/bullet_linearmath/include"
+	} )
+	files( {
+		"../../src/bullet_collision/include/**.h",
+		"../../src/bullet_collision/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- bullet dynamics v2.81 revision 2613
-	project( "bullet_dynamics" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/bullet_dynamics" )
-		buildoptions( {
-			"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
-			"/wd\"4512\"", "/wd\"4267\"", "/wd\"4305\""
-		} )
-		includedirs( {
-			"../../src/bullet_collision/include/",
-			"../../src/bullet_dynamics/include/BulletDynamics/Character",
-			"../../src/bullet_dynamics/include/BulletDynamics/ConstraintSolver",
-			"../../src/bullet_dynamics/include/BulletDynamics/Dynamics",
-			"../../src/bullet_dynamics/include/BulletDynamics/Vehicle",
-			"../../src/bullet_linearmath/include"
-		} )
-		files( {
-			"../../src/bullet_dynamics/include/**.h",
-			"../../src/bullet_dynamics/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "bullet_dynamics" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/bullet_dynamics" )
+	buildoptions( {
+		"/wd\"4127\"", "/wd\"4100\"", "/wd\"4244\"", "/wd\"4702\"",
+		"/wd\"4512\"", "/wd\"4267\"", "/wd\"4305\""
+	} )
+	includedirs( {
+		"../../src/bullet_collision/include/",
+		"../../src/bullet_dynamics/include/BulletDynamics/Character",
+		"../../src/bullet_dynamics/include/BulletDynamics/ConstraintSolver",
+		"../../src/bullet_dynamics/include/BulletDynamics/Dynamics",
+		"../../src/bullet_dynamics/include/BulletDynamics/Vehicle",
+		"../../src/bullet_linearmath/include"
+	} )
+	files( {
+		"../../src/bullet_dynamics/include/**.h",
+		"../../src/bullet_dynamics/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- bullet linearmath v2.81 revision 2613
-	project( "bullet_linearmath" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/bullet_linearmath" )
-		buildoptions( {
-			"/wd\"4127\"", "/wd\"4245\"", "/wd\"4244\"", "/wd\"4267\"",
-			"/wd\"4701\""
-		} )
-		includedirs( {
-			"../../src/bullet_linearmath/include/LinearMath"
-		} )
-		files( {
-			"../../src/bullet_linearmath/include/**.h",
-			"../../src/bullet_linearmath/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "bullet_linearmath" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/bullet_linearmath" )
+	buildoptions( {
+		"/wd\"4127\"", "/wd\"4245\"", "/wd\"4244\"", "/wd\"4267\"",
+		"/wd\"4701\""
+	} )
+	includedirs( {
+		"../../src/bullet_linearmath/include/LinearMath"
+	} )
+	files( {
+		"../../src/bullet_linearmath/include/**.h",
+		"../../src/bullet_linearmath/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- detour v1.4 static library
-	project( "detour" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/detour" )
-		files( { "../../src/detour/include/**.h", "../../src/detour/src/**.cpp" } )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "detour" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/detour" )
+	files( { "../../src/detour/include/**.h", "../../src/detour/src/**.cpp" } )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- freeimage v3.15.4 static library
-	project( "freeimage" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/freeimage" )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4127\"", "/wd\"4189\"", "/wd\"4244\"",
-			"/wd\"4611\"", "/wd\"4389\"", "/wd\"4324\"", "/wd\"4702\"",
-			"/wd\"4701\"", "/wd\"4789\""
-		} )
-		includedirs( {
-			"../../src/libjpeg/include/",
-			"../../src/libopenjpeg/include/",
-			"../../src/libpng/include/",
-			"../../src/libraw/include/",
-			"../../src/libtiff4/include/",
-			"../../src/openexr/include",
-			"../../src/openexr/include/half",
-			"../../src/openexr/include/iex",
-			"../../src/openexr/include/ilmimf",
-			"../../src/openexr/include/imath",
-			"../../src/openexr/include/ilmthread",
-			"../../src/zlib/include/"
-		} )
-		files( {
-			"../../src/freeimage/include/**.h",
-			"../../src/freeimage/src/**.cpp"
-		} )
-		defines( {
-			"WIN32",
-			"_CRT_SECURE_NO_WARNINGS",
-			"FREEIMAGE_LIB",
-			"OPJ_STATIC",
-			"LIBRAW_NODLL"
-		} )
+project( "freeimage" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/freeimage" )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4127\"", "/wd\"4189\"", "/wd\"4244\"",
+		"/wd\"4611\"", "/wd\"4389\"", "/wd\"4324\"", "/wd\"4702\"",
+		"/wd\"4701\"", "/wd\"4789\""
+	} )
+	includedirs( {
+		"../../src/libjpeg/include/",
+		"../../src/libopenjpeg/include/",
+		"../../src/libpng/include/",
+		"../../src/libraw/include/",
+		"../../src/libtiff4/include/",
+		"../../src/openexr/include",
+		"../../src/openexr/include/half",
+		"../../src/openexr/include/iex",
+		"../../src/openexr/include/ilmimf",
+		"../../src/openexr/include/imath",
+		"../../src/openexr/include/ilmthread",
+		"../../src/zlib/include/"
+	} )
+	files( {
+		"../../src/freeimage/include/**.h",
+		"../../src/freeimage/src/**.cpp"
+	} )
+	defines( {
+		"WIN32",
+		"_CRT_SECURE_NO_WARNINGS",
+		"FREEIMAGE_LIB",
+		"OPJ_STATIC",
+		"LIBRAW_NODLL"
+	} )
 
 -- freetype v2.4.12 static library
-	project( "freetype" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/freetype" )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4245\"", "/wd\"4701\"",
-			"/wd\"4267\"", "/wd\"4324\"", "/wd\"4306\"", "/wd\"4703\""
-		} )
-		buildoptions( { "/FI \"ft2build.h\"" } )
-		defines( { "FT2_BUILD_LIBRARY", "_CRT_SECURE_NO_WARNINGS" } )
+project( "freetype" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/freetype" )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4244\"", "/wd\"4245\"", "/wd\"4701\"",
+		"/wd\"4267\"", "/wd\"4324\"", "/wd\"4306\"", "/wd\"4703\""
+	} )
+	buildoptions( { "/FI \"ft2build.h\"" } )
+	defines( { "FT2_BUILD_LIBRARY", "_CRT_SECURE_NO_WARNINGS" } )
 -- required to specify only the module level "c" files
-		files( {
-			"../../src/freetype/include/**.h",
-			"../../src/freetype/src/**.c"
-		} )
-		configuration( {
-			"../../src/freetype/src/**.c"
-		} )
-		flags( "ExcludeFromBuild" )
-		configuration( {
-			"**/autofit.c or " ..
-			"**/bdf.c or " ..
-			"**/cff.c or " ..
-			"**/fgtlcdfil.c or " ..
-			"**/ftbbox.c or " ..
-			"**/ftbase.c or " ..
-			"**/ftbitmap.c or " ..
-			"**/ftcache.c or " ..
-			"**/ftdebug.c or " ..
-			"**/ftfstype.c or " ..
-			"**/ftgasp.c or " ..
-			"**/ftglyph.c or " ..
-			"**/ftgxval.c or " ..
-			"**/ftgzip.c or " ..
-			"**/ftinit.c or " ..
-			"**/ftlzw.c or " ..
-			"**/ftmm.c or " ..
-			"**/ftotval.c or " ..
-			"**/ftpatent.c or " ..
-			"**/ftpfr.c or " ..
-			"**/ftstroke.c or " ..
-			"**/ftsynth.c or " ..
-			"**/ftsystem.c or " ..
-			"**/fttype1.c or " ..
-			"**/ftwinfnt.c or " ..
-			"**/ftxf86.c or " ..
-			"**/pcf.c or " ..
-			"**/pfr.c or " ..
-			"**/psaux.c or " ..
-			"**/pshinter.c or " ..
-			"**/psmodule.c or " ..
-			"**/raster.c or " ..
-			"**/sfnt.c or " ..
-			"**/smooth.c or " ..
-			"**/truetype.c or " ..
-			"**/type1.c or " ..
-			"**/type1cid.c or " ..
-			"**/type42.c or " ..
-			"**/winfnt.c"
-		} )
-		removeflags( "ExcludeFromBuild" )
-		configuration( "*" )
+	files( {
+		"../../src/freetype/include/**.h",
+		"../../src/freetype/src/**.c"
+	} )
+	configuration( {
+		"../../src/freetype/src/**.c"
+	} )
+	flags( "ExcludeFromBuild" )
+	configuration( {
+		"**/autofit.c or " ..
+		"**/bdf.c or " ..
+		"**/cff.c or " ..
+		"**/fgtlcdfil.c or " ..
+		"**/ftbbox.c or " ..
+		"**/ftbase.c or " ..
+		"**/ftbitmap.c or " ..
+		"**/ftcache.c or " ..
+		"**/ftdebug.c or " ..
+		"**/ftfstype.c or " ..
+		"**/ftgasp.c or " ..
+		"**/ftglyph.c or " ..
+		"**/ftgxval.c or " ..
+		"**/ftgzip.c or " ..
+		"**/ftinit.c or " ..
+		"**/ftlzw.c or " ..
+		"**/ftmm.c or " ..
+		"**/ftotval.c or " ..
+		"**/ftpatent.c or " ..
+		"**/ftpfr.c or " ..
+		"**/ftstroke.c or " ..
+		"**/ftsynth.c or " ..
+		"**/ftsystem.c or " ..
+		"**/fttype1.c or " ..
+		"**/ftwinfnt.c or " ..
+		"**/ftxf86.c or " ..
+		"**/pcf.c or " ..
+		"**/pfr.c or " ..
+		"**/psaux.c or " ..
+		"**/pshinter.c or " ..
+		"**/psmodule.c or " ..
+		"**/raster.c or " ..
+		"**/sfnt.c or " ..
+		"**/smooth.c or " ..
+		"**/truetype.c or " ..
+		"**/type1.c or " ..
+		"**/type1cid.c or " ..
+		"**/type42.c or " ..
+		"**/winfnt.c"
+	} )
+	removeflags( "ExcludeFromBuild" )
+	configuration( "*" )
 
 -- gorilla_audio v0.3.0 static library
-	project( "gorilla_audio" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/gorilla_audio" )
-		includedirs( {
-			"../../src/libogg/include/",
-			"../../src/libvorbis/include/"
-		} )
-		buildoptions( {
-			"/I \"$(DXSDK_DIR)/Include/\"",
-			"/wd\"4100\"", "/wd\"4189\"", "/wd\"4244\"", "/wd\"4389\"",
-            "/wd\"4702\"", "/wd\"4267\""
-		} )
-		files( {
-			"../../src/gorilla_audio/include/**.h",
-			"../../src/gorilla_audio/src/**.c"
-		} )
-		configuration( { "**/ga_openal.c" } )
-		flags( "ExcludeFromBuild" )
-		configuration( "*" )
-		defines( { "ENABLE_XAUDIO2", "WIN32" } )
+project( "gorilla_audio" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/gorilla_audio" )
+	includedirs( {
+		"../../src/libogg/include/",
+		"../../src/libvorbis/include/"
+	} )
+	buildoptions( {
+		"/I \"$(DXSDK_DIR)/Include/\"",
+		"/wd\"4100\"", "/wd\"4189\"", "/wd\"4244\"", "/wd\"4389\"",
+        "/wd\"4702\"", "/wd\"4267\""
+	} )
+	files( {
+		"../../src/gorilla_audio/include/**.h",
+		"../../src/gorilla_audio/src/**.c"
+	} )
+	configuration( { "**/ga_openal.c" } )
+	flags( "ExcludeFromBuild" )
+	configuration( "*" )
+	defines( { "ENABLE_XAUDIO2", "WIN32" } )
 
 -- libjpeg 8d static library
-	project( "libjpeg" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libjpeg" )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\""
-		} )
-		files( {
-		    "../../src/libjpeg/include/**.h",
-			"../../src/libjpeg/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "libjpeg" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libjpeg" )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\""
+	} )
+	files( {
+	    "../../src/libjpeg/include/**.h",
+		"../../src/libjpeg/src/**.c"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- libogg v1.3.1 static library
-	project( "libogg" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libogg" )
-		files( {
-		    "../../src/libogg/include/**.h",
-			"../../src/libogg/src/**.c"
-		} )
-		defines( { "WIN32" } )
+project( "libogg" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libogg" )
+	files( {
+	    "../../src/libogg/include/**.h",
+		"../../src/libogg/src/**.c"
+	} )
+	defines( { "WIN32" } )
 
 -- libopenjpeg v1.5.1 static library
-	project( "libopenjpeg" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libopenjpeg" )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\"",
-			"/wd\"4701\"", "/wd\"4706\""
-		} )
-		files( {
-			"../../src/libopenjpeg/include/**.h",
-			"../../src/libopenjpeg/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS", "OPJ_STATIC" } )
+project( "libopenjpeg" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libopenjpeg" )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4244\"", "/wd\"4127\"", "/wd\"4267\"",
+		"/wd\"4701\"", "/wd\"4706\""
+	} )
+	files( {
+		"../../src/libopenjpeg/include/**.h",
+		"../../src/libopenjpeg/src/**.c"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS", "OPJ_STATIC" } )
 
 -- libpng v1.5.13 static library
-	project( "libpng" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libpng" )
-		buildoptions( { "/wd\"4127\"" } )
-		includedirs( { "../../src/zlib/include/" } )
-		files( {
-		    "../../src/libpng/include/**.h",
-		    "../../src/libpng/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "libpng" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libpng" )
+	buildoptions( { "/wd\"4127\"" } )
+	includedirs( { "../../src/zlib/include/" } )
+	files( {
+	    "../../src/libpng/include/**.h",
+	    "../../src/libpng/src/**.c"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- libraw v1.5.13 static library
-	project( "libraw" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libraw" )
-		buildoptions( {
-			"/wd\"4244\"", "/wd\"4189\"", "/wd\"4101\"", "/wd\"4706\"",
-			"/wd\"4100\"", "/wd\"4018\"", "/wd\"4305\"", "/wd\"4309\"",
-			"/wd\"4127\"", "/wd\"4389\"", "/wd\"4804\"", "/wd\"4146\"",
-			"/wd\"4245\"", "/wd\"4996\"", "/wd\"4702\"", "/wd\"4267\"",
-			"/wd\"4701\""
-		} )
-		files( {
-			"../../src/libraw/include/**.h",
-			"../../src/libraw/src/**.c",
-			"../../src/libraw/src/**.cpp"
-		} )
-		excludes( { "../../src/libraw/src/**dcb_demosaicing.c" } )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS", "LIBRAW_NODLL" } )
+project( "libraw" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libraw" )
+	buildoptions( {
+		"/wd\"4244\"", "/wd\"4189\"", "/wd\"4101\"", "/wd\"4706\"",
+		"/wd\"4100\"", "/wd\"4018\"", "/wd\"4305\"", "/wd\"4309\"",
+		"/wd\"4127\"", "/wd\"4389\"", "/wd\"4804\"", "/wd\"4146\"",
+		"/wd\"4245\"", "/wd\"4996\"", "/wd\"4702\"", "/wd\"4267\"",
+		"/wd\"4701\""
+	} )
+	files( {
+		"../../src/libraw/include/**.h",
+		"../../src/libraw/src/**.c",
+		"../../src/libraw/src/**.cpp"
+	} )
+	excludes( { "../../src/libraw/src/**dcb_demosaicing.c" } )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS", "LIBRAW_NODLL" } )
 
 -- libtiff4 v4.0.3 static library
-	project( "libtiff4" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libtiff4" )
-		buildoptions( {
-			"/wd\"4127\"", "/wd\"4244\"", "/wd\"4706\"", "/wd\"4702\"",
-			"/wd\"4701\"", "/wd\"4018\"", "/wd\"4306\"", "/wd\"4305\"",
-			"/wd\"4267\"", "/wd\"4324\"", "/wd\"4703\"", "/wd\"4100\""
-		} )
-		includedirs( {
-			"../../src/libjpeg/include/",
-			"../../src/zlib/include/"
-		} )
-		files( {
-		    "../../src/libtiff4/include/**.h",
-			"../../src/libtiff4/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "libtiff4" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libtiff4" )
+	buildoptions( {
+		"/wd\"4127\"", "/wd\"4244\"", "/wd\"4706\"", "/wd\"4702\"",
+		"/wd\"4701\"", "/wd\"4018\"", "/wd\"4306\"", "/wd\"4305\"",
+		"/wd\"4267\"", "/wd\"4324\"", "/wd\"4703\"", "/wd\"4100\""
+	} )
+	includedirs( {
+		"../../src/libjpeg/include/",
+		"../../src/zlib/include/"
+	} )
+	files( {
+	    "../../src/libtiff4/include/**.h",
+		"../../src/libtiff4/src/**.c"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- libvorbis v1.3.4 static library
-	project( "libvorbis" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/libvorbis" )
-		includedirs( { "../../src/libogg/include/" } )
-		buildoptions( {
-			"/wd\"4244\"", "/wd\"4127\"", "/wd\"4706\"", "/wd\"4305\"",
-			"/wd\"4267\""
-		} )
-		files( {
-		    "../../src/libvorbis/include/**.h",
-			"../../src/libvorbis/src/**.c"
-		} )
-		configuration( {
-			"**/psytune.c or " ..
-			"**/tone.c"
-		} )
-		flags( "ExcludeFromBuild" )
-		configuration( "*" )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
-
--- lua v5.1.5 static library
-	project( "lua" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/lua" )
-		buildoptions( {
-			"/wd\"4244\"", "/wd\"4702\"", "/wd\"4324\"", "/wd\"4334\""
-		} )
-		files( {
-			"../../src/lua/include/**.h",
-			"../../src/lua/include/**.hpp",
-			"../../src/lua/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "libvorbis" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/libvorbis" )
+	includedirs( { "../../src/libogg/include/" } )
+	buildoptions( {
+		"/wd\"4244\"", "/wd\"4127\"", "/wd\"4706\"", "/wd\"4305\"",
+		"/wd\"4267\""
+	} )
+	files( {
+	    "../../src/libvorbis/include/**.h",
+		"../../src/libvorbis/src/**.c"
+	} )
+	configuration( {
+		"**/psytune.c or " ..
+		"**/tone.c"
+	} )
+	flags( "ExcludeFromBuild" )
+	configuration( "*" )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- ogre3d v1.8.1 static library
-	project( "ogre3d" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ogre3d" )
-		pchheader( "OgreStableHeaders.h" )
-		pchsource( "../../src/ogre3d/src/OgrePrecompiledHeaders.cpp" )
-		buildoptions( {
-			"/bigobj",
-			"/wd\"4100\"", "/wd\"4127\"", "/wd\"4193\"", "/wd\"4244\"",
-			"/wd\"4305\"", "/wd\"4512\"", "/wd\"4706\"", "/wd\"4702\"",
-			"/wd\"4245\"", "/wd\"4503\"", "/wd\"4146\"", "/wd\"4565\"",
-			"/wd\"4267\"", "/wd\"4996\"", "/wd\"4005\"", "/wd\"4345\"",
-			"/Zm198"
-		} )
-		includedirs( {
-			"../../src/freeimage/include/",
-			"../../src/freetype/include/",
-			"../../src/ogre3d/include/nedmalloc",
-			"../../src/zlib/include/",
-			"../../src/zzip/include/"
-		} )
-		files( {
-			"../../src/ogre3d/include/**.h",
-			"../../src/ogre3d/src/**.cpp",
-			"../../src/ogre3d/resources/**.rc",
-			"../../src/ogre3d/resources/**.ico",
-			"../../src/ogre3d/resources/**.bmp"
-		} )
-		configuration( "**/Ogre*.cpp" )
-		flags( "ExcludeFromBuild" )
-		configuration( "**/OgrePrecompiledHeaders.cpp" )
-		removeflags( "ExcludeFromBuild" )
-		configuration( "*" )
-		defines( {
-			"WIN32",
-			"_CRT_SECURE_NO_WARNINGS",
-			"OGRE_NONCLIENT_BUILD",
-			"FREEIMAGE_LIB"
-		} )
-		vpaths( {
-			["resources/*"] = { "**.rc", "**.bmp", "**.ico" }
-		} )
+project( "ogre3d" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ogre3d" )
+	pchheader( "OgreStableHeaders.h" )
+	pchsource( "../../src/ogre3d/src/OgrePrecompiledHeaders.cpp" )
+	buildoptions( {
+		"/bigobj",
+		"/wd\"4100\"", "/wd\"4127\"", "/wd\"4193\"", "/wd\"4244\"",
+		"/wd\"4305\"", "/wd\"4512\"", "/wd\"4706\"", "/wd\"4702\"",
+		"/wd\"4245\"", "/wd\"4503\"", "/wd\"4146\"", "/wd\"4565\"",
+		"/wd\"4267\"", "/wd\"4996\"", "/wd\"4005\"", "/wd\"4345\"",
+		"/Zm198"
+	} )
+	includedirs( {
+		"../../src/freeimage/include/",
+		"../../src/freetype/include/",
+		"../../src/ogre3d/include/nedmalloc",
+		"../../src/zlib/include/",
+		"../../src/zzip/include/"
+	} )
+	files( {
+		"../../src/ogre3d/include/**.h",
+		"../../src/ogre3d/src/**.cpp",
+		"../../src/ogre3d/resources/**.rc",
+		"../../src/ogre3d/resources/**.ico",
+		"../../src/ogre3d/resources/**.bmp"
+	} )
+	configuration( "**/Ogre*.cpp" )
+	flags( "ExcludeFromBuild" )
+	configuration( "**/OgrePrecompiledHeaders.cpp" )
+	removeflags( "ExcludeFromBuild" )
+	configuration( "*" )
+	defines( {
+		"WIN32",
+		"_CRT_SECURE_NO_WARNINGS",
+		"OGRE_NONCLIENT_BUILD",
+		"FREEIMAGE_LIB"
+	} )
+	vpaths( {
+		["resources/*"] = { "**.rc", "**.bmp", "**.ico" }
+	} )
 
 -- ogre3d direct3d9 plugin v1.8.1 static library
-	project( "ogre3d_direct3d9" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ogre3d_direct3d9" )
-		includedirs( { "../../src/ogre3d/include/" } )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
-			"/wd\"4127\"", "/wd\"4389\"", "/wd\"4512\"", "/wd\"4701\"",
-			"/wd\"4244\"", "/wd\"4702\"", "/wd\"4267\"", "/wd\"4703\"",
-			"/Zm198"
-		} )
-		linkoptions ( { "/ignore:\"4221\"" } )
-		configuration( "windows" )
-		buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
-		configuration( "*" )
-		files( {
-			"../../src/ogre3d_direct3d9/include/**.h",
-			"../../src/ogre3d_direct3d9/src/**.cpp"
-		} )
-		configuration( "**/Ogre*.cpp" )
-		flags( "ExcludeFromBuild" )
-		configuration( "*" )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "ogre3d_direct3d9" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ogre3d_direct3d9" )
+	includedirs( { "../../src/ogre3d/include/" } )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
+		"/wd\"4127\"", "/wd\"4389\"", "/wd\"4512\"", "/wd\"4701\"",
+		"/wd\"4244\"", "/wd\"4702\"", "/wd\"4267\"", "/wd\"4703\"",
+		"/Zm198"
+	} )
+	linkoptions ( { "/ignore:\"4221\"" } )
+	configuration( "windows" )
+	buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
+	configuration( "*" )
+	files( {
+		"../../src/ogre3d_direct3d9/include/**.h",
+		"../../src/ogre3d_direct3d9/src/**.cpp"
+	} )
+	configuration( "**/Ogre*.cpp" )
+	flags( "ExcludeFromBuild" )
+	configuration( "*" )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- ogre3d gorilla ui "master" static library
-	project( "ogre3d_gorilla" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ogre3d_gorilla" )
-		includedirs( { "../../src/" } )
-		buildoptions( {
-			"/Zm198"
-		} )
-		configuration( "*" )
-		files( {
-			"../../src/ogre3d_gorilla/include/**.h",
-			"../../src/ogre3d_gorilla/src/**.cpp"
-		} )
-		defines( { "WIN32" } )
+project( "ogre3d_gorilla" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ogre3d_gorilla" )
+	includedirs( { "../../src/" } )
+	buildoptions( {
+		"/Zm198"
+	} )
+	configuration( "*" )
+	files( {
+		"../../src/ogre3d_gorilla/include/**.h",
+		"../../src/ogre3d_gorilla/src/**.cpp"
+	} )
+	defines( { "WIN32" } )
         
 -- ogre3d particlefx plugin v1.8.1 static library
-	project( "ogre3d_particlefx" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ogre3d_particlefx" )
-		includedirs( { "../../src/ogre3d/include/" } )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
-			"/wd\"4127\"", "/wd\"4389\"", "/wd\"4512\"", "/wd\"4701\"",
-			"/wd\"4244\"", "/wd\"4702\"", "/wd\"4267\"", "/wd\"4703\"",
-			"/Zm198"
-		} )
-		linkoptions ( { "/ignore:\"4221\"" } )
-		configuration( "windows" )
-			buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
-		configuration( "*" )
-		files( {
-			"../../src/ogre3d_particlefx/include/**.h",
-			"../../src/ogre3d_particlefx/src/**.cpp"
-		} )
-		configuration( "**/Ogre*.cpp" )
-			flags( "ExcludeFromBuild" )
-		configuration( "*" )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "ogre3d_particlefx" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ogre3d_particlefx" )
+	includedirs( { "../../src/ogre3d/include/" } )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4189\"", "/wd\"4018\"", "/wd\"4193\"",
+		"/wd\"4127\"", "/wd\"4389\"", "/wd\"4512\"", "/wd\"4701\"",
+		"/wd\"4244\"", "/wd\"4702\"", "/wd\"4267\"", "/wd\"4703\"",
+		"/Zm198"
+	} )
+	linkoptions ( { "/ignore:\"4221\"" } )
+	configuration( "windows" )
+	buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
+	configuration( "*" )
+	files( {
+		"../../src/ogre3d_particlefx/include/**.h",
+		"../../src/ogre3d_particlefx/src/**.cpp"
+	} )
+	configuration( "**/Ogre*.cpp" )
+	flags( "ExcludeFromBuild" )
+	configuration( "*" )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- ogre3d procedural v0.2 static library
-	project( "ogre3d_procedural" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ogre3d_procedural" )
-		pchheader( "ProceduralStableHeaders.h" )
-		pchsource( "../../src/ogre3d_procedural/src/ProceduralPrecompiledHeaders.cpp" )
-		includedirs( { "../../src/ogre3d/include/" } )
-		buildoptions( {
-			"/wd\"4100\"", "/wd\"4127\"", "/wd\"4244\"", "/wd\"4701\"",
-			"/wd\"4267\"",
-			"/Zm198"
-		} )
-		files( {
-			"../../src/ogre3d_procedural/include/**.h",
-			"../../src/ogre3d_procedural/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "ogre3d_procedural" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ogre3d_procedural" )
+	pchheader( "ProceduralStableHeaders.h" )
+	pchsource( "../../src/ogre3d_procedural/src/ProceduralPrecompiledHeaders.cpp" )
+	includedirs( { "../../src/ogre3d/include/" } )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4127\"", "/wd\"4244\"", "/wd\"4701\"",
+		"/wd\"4267\"",
+		"/Zm198"
+	} )
+	files( {
+		"../../src/ogre3d_procedural/include/**.h",
+		"../../src/ogre3d_procedural/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- ois v1.3 static library
-	project( "ois" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/ois" )
-		buildoptions( {
-			"/wd\"4512\"", "/wd\"4100\"", "/wd\"4189\""
-		} )
-		configuration( "windows" )
-			buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
-		configuration( "*" )
-		files( {
-		    "../../src/ois/include/**.h",
-			"../../src/ois/src/**.cpp"
-		} )
+project( "ois" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/ois" )
+	buildoptions( {
+		"/wd\"4512\"", "/wd\"4100\"", "/wd\"4189\""
+	} )
+	configuration( "windows" )
+		buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
+	configuration( "*" )
+	files( {
+	    "../../src/ois/include/**.h",
+		"../../src/ois/src/**.cpp"
+	} )
 
 -- openexr v1.5.13 static library
-	project( "openexr" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/openexr" )
-		buildoptions( {
-			"/wd\"4244\"", "/wd\"4305\"", "/wd\"4100\"", "/wd\"4127\"",
-			"/wd\"4245\"", "/wd\"4512\"", "/wd\"4706\"", "/wd\"4267\"",
-			"/wd\"4702\"", "/wd\"4101\"", "/wd\"4800\"", "/wd\"4018\"",
-			"/wd\"4701\"", "/wd\"4389\"", "/wd\"4334\"", "/wd\"4722\""
-		} )
-		linkoptions ( { "/ignore:\"4221\"" } )
-		includedirs( {
-			"../../src/openexr/include/half",
-			"../../src/openexr/include/iex",
-			"../../src/openexr/include/ilmimf",
-			"../../src/openexr/include/ilmthread",
-			"../../src/openexr/include/imath",
-			"../../src/zlib/include/"
-		} )
-		files( {
-		    "../../src/openexr/include/**.h",
-			"../../src/openexr/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "openexr" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/openexr" )
+	buildoptions( {
+		"/wd\"4244\"", "/wd\"4305\"", "/wd\"4100\"", "/wd\"4127\"",
+		"/wd\"4245\"", "/wd\"4512\"", "/wd\"4706\"", "/wd\"4267\"",
+		"/wd\"4702\"", "/wd\"4101\"", "/wd\"4800\"", "/wd\"4018\"",
+		"/wd\"4701\"", "/wd\"4389\"", "/wd\"4334\"", "/wd\"4722\""
+	} )
+	linkoptions ( { "/ignore:\"4221\"" } )
+	includedirs( {
+		"../../src/openexr/include/half",
+		"../../src/openexr/include/iex",
+		"../../src/openexr/include/ilmimf",
+		"../../src/openexr/include/ilmthread",
+		"../../src/openexr/include/imath",
+		"../../src/zlib/include/"
+	} )
+	files( {
+	    "../../src/openexr/include/**.h",
+		"../../src/openexr/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- opensteer revision 190 static library
-	project( "opensteer" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/opensteer" )
-		buildoptions( { "/wd\"4701\"", "/wd\"4244\"", "/wd\"4100\"" } )
-		files( {
-			"../../src/opensteer/include/**.h",
-			"../../src/opensteer/src/**.c",
-			"../../src/opensteer/src/**.cpp"
-		} )
-		defines( { "WIN32", "HAVE_NO_GLUT" } )
+project( "opensteer" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/opensteer" )
+	buildoptions( { "/wd\"4701\"", "/wd\"4244\"", "/wd\"4100\"" } )
+	files( {
+		"../../src/opensteer/include/**.h",
+		"../../src/opensteer/src/**.c",
+		"../../src/opensteer/src/**.cpp"
+	} )
+	defines( { "WIN32", "HAVE_NO_GLUT" } )
 
 -- recast v1.4 static library
-	project( "recast" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/recast" )
-		files( {
-		    "../../src/recast/include/**.h",
-			"../../src/recast/src/**.cpp"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "recast" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/recast" )
+	files( {
+	    "../../src/recast/include/**.h",
+		"../../src/recast/src/**.cpp"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
 
 -- zlib v1.2.8 static library
-	project( "zlib" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/zlib" )
-		buildoptions( {
-			"/wd\"4131\"", "/wd\"4996\"", "/wd\"4244\"", "/wd\"4127\""
-		} )
-		files( {
-		    "../../src/zlib/include/**.h",
-			"../../src/zlib/src/**.c"
-		} )
-		defines( { "WIN32" } )
+project( "zlib" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/zlib" )
+	buildoptions( {
+		"/wd\"4131\"", "/wd\"4996\"", "/wd\"4244\"", "/wd\"4127\""
+	} )
+	files( {
+	    "../../src/zlib/include/**.h",
+		"../../src/zlib/src/**.c"
+	} )
+	defines( { "WIN32" } )
 
 -- zziplib v0.13.62 static library
-	project( "zzip" )
-		kind( "StaticLib" )
-		location( "../" ..  _ACTION .. "/projects/zzip" )
-		buildoptions( {
-			"/wd\"4127\"", "/wd\"4996\"", "/wd\"4706\"", "/wd\"4244\"",
-			"/wd\"4267\"", "/wd\"4028\"", "/wd\"4305\""
-		} )
-		includedirs( { "../../src/zlib/include/" } )
-		files( {
-		    "../../src/zzip/include/**.h",
-			"../../src/zzip/src/**.c"
-		} )
-		defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )
+project( "zzip" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/zzip" )
+	buildoptions( {
+		"/wd\"4127\"", "/wd\"4996\"", "/wd\"4706\"", "/wd\"4244\"",
+		"/wd\"4267\"", "/wd\"4028\"", "/wd\"4305\""
+	} )
+	includedirs( { "../../src/zlib/include/" } )
+	files( {
+	    "../../src/zzip/include/**.h",
+		"../../src/zzip/src/**.c"
+	} )
+	defines( { "WIN32", "_CRT_SECURE_NO_WARNINGS" } )

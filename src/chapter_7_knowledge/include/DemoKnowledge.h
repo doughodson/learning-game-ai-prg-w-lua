@@ -24,7 +24,7 @@
 #ifndef CHAPTER_7_KNOWLEDGE_H
 #define CHAPTER_7_KNOWLEDGE_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoKnowledge : public SandboxApplication
 {

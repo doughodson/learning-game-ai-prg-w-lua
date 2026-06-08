@@ -24,7 +24,7 @@
 #ifndef CHAPTER_6_DECISION_MAKING_H
 #define CHAPTER_6_DECISION_MAKING_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoDecisionMaking : public SandboxApplication
 {

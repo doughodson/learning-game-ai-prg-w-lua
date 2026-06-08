@@ -23,7 +23,7 @@
 
 #include "chapter_6_decision_making/include/DemoDecisionMaking.h"
 
-#include "demo_framework/include/Sandbox.h"
+#include "framework/include/Sandbox.h"
 
 DemoDecisionMaking::DemoDecisionMaking()
     : SandboxApplication(

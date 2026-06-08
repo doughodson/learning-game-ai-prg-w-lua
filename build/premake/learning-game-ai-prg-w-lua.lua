@@ -94,12 +94,5 @@ solution( "Learning Game AI Programming" )
 	group( "Framework" )
     dofile("framework.lua")
 
-	CreateSandboxProject( "demo_framework_test" );
-		kind( "ConsoleApp" );
-		-- postbuildcommands( { "cd \"$(OutDir)\" & \"$(TargetPath)\"" } );
-
---------------------------------------------------------------------------------
--- Open source library definitions
---------------------------------------------------------------------------------
 	group( "Libraries" )
     dofile("libraries.lua")

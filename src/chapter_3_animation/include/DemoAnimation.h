@@ -24,7 +24,7 @@
 #ifndef CHAPTER_3_ANIMATION_DEMO_ANIMATION_H
 #define CHAPTER_3_ANIMATION_DEMO_ANIMATION_H
 
-#include "demo_framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.h"
 
 class DemoAnimation : public SandboxApplication
 {

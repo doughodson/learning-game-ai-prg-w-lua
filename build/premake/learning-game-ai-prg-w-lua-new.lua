@@ -2,8 +2,7 @@
 workspace "Learning Game AI Programming"
 	-- configuration shared between all projects
 	location( "../" .. _ACTION )
-	configurations( { "Debug", "Release" } )
-
+	configurations{ "Debug", "Release" }
 	language( "C++" )
 	includedirs( { "../../src/%{prj.name}/include/" } )
 

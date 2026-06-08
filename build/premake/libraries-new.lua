@@ -103,3 +103,66 @@ project( "freeimage" )
 		"OPJ_STATIC",
 		"LIBRAW_NODLL"
 	} )
+
+-- freetype v2.4.12 static library
+project( "freetype" )
+	kind( "StaticLib" )
+	location( "../" ..  _ACTION .. "/projects/freetype" )
+	buildoptions( {
+		"/wd\"4100\"", "/wd\"4244\"", "/wd\"4245\"", "/wd\"4701\"",
+		"/wd\"4267\"", "/wd\"4324\"", "/wd\"4306\"", "/wd\"4703\""
+	} )
+	buildoptions( { "/FI \"ft2build.h\"" } )
+	defines( { "FT2_BUILD_LIBRARY", "_CRT_SECURE_NO_WARNINGS" } )
+-- required to specify only the module level "c" files
+	files( {
+		"../../src/freetype/include/**.h",
+		"../../src/freetype/src/**.c"
+	} )
+	configuration( {
+		"../../src/freetype/src/**.c"
+	} )
+	flags( "ExcludeFromBuild" )
+	configuration( {
+		"**/autofit.c or " ..
+		"**/bdf.c or " ..
+		"**/cff.c or " ..
+		"**/fgtlcdfil.c or " ..
+		"**/ftbbox.c or " ..
+		"**/ftbase.c or " ..
+		"**/ftbitmap.c or " ..
+		"**/ftcache.c or " ..
+		"**/ftdebug.c or " ..
+		"**/ftfstype.c or " ..
+		"**/ftgasp.c or " ..
+		"**/ftglyph.c or " ..
+		"**/ftgxval.c or " ..
+		"**/ftgzip.c or " ..
+		"**/ftinit.c or " ..
+		"**/ftlzw.c or " ..
+		"**/ftmm.c or " ..
+		"**/ftotval.c or " ..
+		"**/ftpatent.c or " ..
+		"**/ftpfr.c or " ..
+		"**/ftstroke.c or " ..
+		"**/ftsynth.c or " ..
+		"**/ftsystem.c or " ..
+		"**/fttype1.c or " ..
+		"**/ftwinfnt.c or " ..
+		"**/ftxf86.c or " ..
+		"**/pcf.c or " ..
+		"**/pfr.c or " ..
+		"**/psaux.c or " ..
+		"**/pshinter.c or " ..
+		"**/psmodule.c or " ..
+		"**/raster.c or " ..
+		"**/sfnt.c or " ..
+		"**/smooth.c or " ..
+		"**/truetype.c or " ..
+		"**/type1.c or " ..
+		"**/type1cid.c or " ..
+		"**/type42.c or " ..
+		"**/winfnt.c"
+	} )
+	removeflags( "ExcludeFromBuild" )
+	configuration( "*" )
