@@ -21,23 +21,29 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_9_TACTICS_H
-#define CHAPTER_9_TACTICS_H
+#ifndef __CHAPTER_5_NAVIGATION_HPP__
+#define __CHAPTER_5_NAVIGATION_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoTactics : public SandboxApplication
+class DemoNavigation : public SandboxApplication
 {
 public:
-    DemoTactics();
+    DemoNavigation(void);
 
-    virtual ~DemoTactics();
+    virtual ~DemoNavigation(void);
+
+    virtual void Cleanup();
+
+    virtual void Draw();
 
     virtual void Initialize();
 
+    virtual void Update();
+
 private:
-    DemoTactics(const DemoTactics&);
-    DemoTactics& operator=(const DemoTactics&);
+    DemoNavigation(const DemoNavigation&);
+    DemoNavigation& operator=(const DemoNavigation&);
 };
 
-#endif  // CHAPTER_9_TACTICS_H
+#endif

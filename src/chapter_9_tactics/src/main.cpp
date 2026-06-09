@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_9_tactics/include/DemoTactics.h"
+#include "chapter_9_tactics/include/DemoTactics.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

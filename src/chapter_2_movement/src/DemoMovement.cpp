@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_2_movement/include/DemoMovement.h"
+#include "chapter_2_movement/include/DemoMovement.hpp"
 
 DemoMovement::DemoMovement()
     : SandboxApplication(

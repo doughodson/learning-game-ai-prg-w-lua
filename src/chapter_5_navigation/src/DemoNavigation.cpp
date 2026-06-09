@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_5_navigation/include/DemoNavigation.h"
+#include "chapter_5_navigation/include/DemoNavigation.hpp"
 
 #include "framework/include/Sandbox.h"
 #include "ogre3d_gorilla/include/Gorilla.h"

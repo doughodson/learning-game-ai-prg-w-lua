@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_4_mind_body/include/DemoMindBody.h"
+#include "chapter_4_mind_body/include/DemoMindBody.hpp"
 
 #include "framework/include/Sandbox.h"
 

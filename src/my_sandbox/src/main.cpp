@@ -1,4 +1,4 @@
-#include "my_sandbox/include/MySandBox.h"
+#include "my_sandbox/include/MySandBox.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

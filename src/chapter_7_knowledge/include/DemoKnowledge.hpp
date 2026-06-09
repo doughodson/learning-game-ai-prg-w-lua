@@ -21,25 +21,23 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_1_MOVEMENT_DEMO_MOVEMENT_H
-#define CHAPTER_1_MOVEMENT_DEMO_MOVEMENT_H
+#ifndef __CHAPTER_7_KNOWLEDGE_HPP__
+#define __CHAPTER_7_KNOWLEDGE_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoIntroduction : public SandboxApplication
+class DemoKnowledge : public SandboxApplication
 {
 public:
-    DemoIntroduction(void);
+    DemoKnowledge();
 
-    virtual ~DemoIntroduction(void);
+    virtual ~DemoKnowledge();
 
     virtual void Initialize();
 
-    virtual void Update();
-
 private:
-    DemoIntroduction(const DemoIntroduction&);
-    DemoIntroduction& operator=(const DemoIntroduction&);
+    DemoKnowledge(const DemoKnowledge&);
+    DemoKnowledge& operator=(const DemoKnowledge&);
 };
 
-#endif  // CHAPTER_1_MOVEMENT_DEMO_MOVEMENT_H
+#endif

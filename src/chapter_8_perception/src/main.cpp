@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_8_perception/include/DemoPerception.h"
+#include "chapter_8_perception/include/DemoPerception.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

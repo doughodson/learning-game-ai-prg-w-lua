@@ -21,23 +21,23 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_6_DECISION_MAKING_H
-#define CHAPTER_6_DECISION_MAKING_H
+#ifndef __CHAPTER_8_PERCEPTION_HPP__
+#define __CHAPTER_8_PERCEPTION_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoDecisionMaking : public SandboxApplication
+class DemoPerception : public SandboxApplication
 {
 public:
-    DemoDecisionMaking();
+    DemoPerception();
 
-    virtual ~DemoDecisionMaking();
+    virtual ~DemoPerception();
 
     virtual void Initialize();
 
 private:
-    DemoDecisionMaking(const DemoDecisionMaking&);
-    DemoDecisionMaking& operator=(const DemoDecisionMaking&);
+    DemoPerception(const DemoPerception&);
+    DemoPerception& operator=(const DemoPerception&);
 };
 
-#endif  // CHAPTER_6_DECISION_MAKING_H
+#endif

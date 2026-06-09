@@ -21,29 +21,25 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_4_ANIMATION_DEMO_ANIMATION_H
-#define CHAPTER_4_ANIMATION_DEMO_ANIMATION_H
+#ifndef __CHAPTER_1_MOVEMENT_DEMO_MOVEMENT_HPP__
+#define __CHAPTER_1_MOVEMENT_DEMO_MOVEMENT_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoMindBody : public SandboxApplication
+class DemoIntroduction : public SandboxApplication
 {
 public:
-    DemoMindBody(void);
+    DemoIntroduction(void);
 
-    virtual ~DemoMindBody(void);
-
-    virtual void Cleanup();
-
-    virtual void Draw();
+    virtual ~DemoIntroduction(void);
 
     virtual void Initialize();
 
     virtual void Update();
 
 private:
-    DemoMindBody(const DemoMindBody&);
-    DemoMindBody& operator=(const DemoMindBody&);
+    DemoIntroduction(const DemoIntroduction&);
+    DemoIntroduction& operator=(const DemoIntroduction&);
 };
 
-#endif  // CHAPTER_4_ANIMATION_DEMO_ANIMATION_H
+#endif

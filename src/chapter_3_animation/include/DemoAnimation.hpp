@@ -21,8 +21,8 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_3_ANIMATION_DEMO_ANIMATION_H
-#define CHAPTER_3_ANIMATION_DEMO_ANIMATION_H
+#ifndef __CHAPTER_3_ANIMATION_DEMO_ANIMATION_HPP__
+#define __CHAPTER_3_ANIMATION_DEMO_ANIMATION_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
@@ -46,4 +46,4 @@ private:
     DemoAnimation& operator=(const DemoAnimation&);
 };
 
-#endif  // CHAPTER_3_ANIMATION_DEMO_ANIMATION_H
+#endif

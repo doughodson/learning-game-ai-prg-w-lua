@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_8_perception/include/DemoPerception.h"
+#include "chapter_8_perception/include/DemoPerception.hpp"
 
 #include "framework/include/Sandbox.h"
 

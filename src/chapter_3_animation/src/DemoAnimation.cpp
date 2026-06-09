@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_3_animation/include/DemoAnimation.h"
+#include "chapter_3_animation/include/DemoAnimation.hpp"
 
 DemoAnimation::DemoAnimation()
     : SandboxApplication(

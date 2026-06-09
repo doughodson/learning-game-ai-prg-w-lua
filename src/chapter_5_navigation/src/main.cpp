@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_5_navigation/include/DemoNavigation.h"
+#include "chapter_5_navigation/include/DemoNavigation.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

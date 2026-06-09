@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_9_tactics/include/DemoTactics.h"
+#include "chapter_9_tactics/include/DemoTactics.hpp"
 
 #include "framework/include/Sandbox.h"
 

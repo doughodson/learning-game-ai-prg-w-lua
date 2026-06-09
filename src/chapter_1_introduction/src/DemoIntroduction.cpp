@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_1_introduction/include/DemoIntroduction.h"
+#include "chapter_1_introduction/include/DemoIntroduction.hpp"
 #include "framework/include/LuaScriptUtilities.h"
 
 Ogre::AnimationState* state = NULL;

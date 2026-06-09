@@ -21,23 +21,29 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_8_PERCEPTION_H
-#define CHAPTER_8_PERCEPTION_H
+#ifndef __CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_HPP__
+#define __CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoPerception : public SandboxApplication
+class DemoMovement : public SandboxApplication
 {
 public:
-    DemoPerception();
+    DemoMovement(void);
 
-    virtual ~DemoPerception();
+    virtual ~DemoMovement(void);
+
+    virtual void Cleanup();
+
+    virtual void Draw();
 
     virtual void Initialize();
 
+    virtual void Update();
+
 private:
-    DemoPerception(const DemoPerception&);
-    DemoPerception& operator=(const DemoPerception&);
+    DemoMovement(const DemoMovement&);
+    DemoMovement& operator=(const DemoMovement&);
 };
 
-#endif  // CHAPTER_8_PERCEPTION_H
+#endif

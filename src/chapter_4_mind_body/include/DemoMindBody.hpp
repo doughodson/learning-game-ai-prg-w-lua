@@ -21,17 +21,17 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_5_NAVIGATION_H
-#define CHAPTER_5_NAVIGATION_H
+#ifndef __CHAPTER_4_ANIMATION_DEMO_ANIMATION_HPP__
+#define __CHAPTER_4_ANIMATION_DEMO_ANIMATION_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoNavigation : public SandboxApplication
+class DemoMindBody : public SandboxApplication
 {
 public:
-    DemoNavigation(void);
+    DemoMindBody(void);
 
-    virtual ~DemoNavigation(void);
+    virtual ~DemoMindBody(void);
 
     virtual void Cleanup();
 
@@ -42,8 +42,8 @@ public:
     virtual void Update();
 
 private:
-    DemoNavigation(const DemoNavigation&);
-    DemoNavigation& operator=(const DemoNavigation&);
+    DemoMindBody(const DemoMindBody&);
+    DemoMindBody& operator=(const DemoMindBody&);
 };
 
-#endif  // CHAPTER_5_NAVIGATION_H
+#endif

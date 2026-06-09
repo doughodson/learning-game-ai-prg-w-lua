@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_6_decision_making/include/DemoDecisionMaking.h"
+#include "chapter_6_decision_making/include/DemoDecisionMaking.hpp"
 
 #include "framework/include/Sandbox.h"
 

@@ -21,29 +21,23 @@
  *  distribution.
  */
 
-#ifndef CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_H
-#define CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_H
+#ifndef __FRAMEWORK_TEST_HPP__
+#define __FRAMEWORK_TEST_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoMovement : public SandboxApplication
+class DemoTest : public SandboxApplication
 {
 public:
-    DemoMovement(void);
+    DemoTest(void);
 
-    virtual ~DemoMovement(void);
-
-    virtual void Cleanup();
-
-    virtual void Draw();
+    virtual ~DemoTest(void);
 
     virtual void Initialize();
 
-    virtual void Update();
-
 private:
-    DemoMovement(const DemoMovement&);
-    DemoMovement& operator=(const DemoMovement&);
+    DemoTest(const DemoTest&);
+    DemoTest& operator=(const DemoTest&);
 };
 
-#endif  // CHAPTER_2_MOVEMENT_DEMO_MOVEMENT_H
+#endif

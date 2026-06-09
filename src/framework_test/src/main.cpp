@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "framework_test/include/DemoTest.h"
+#include "framework_test/include/DemoTest.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32

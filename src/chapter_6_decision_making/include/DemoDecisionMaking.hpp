@@ -21,23 +21,23 @@
  *  distribution.
  */
 
-#ifndef FRAMEWORK_TEST_H
-#define FRAMEWORK_TEST_H
+#ifndef __CHAPTER_6_DECISION_MAKING_HPP__
+#define __CHAPTER_6_DECISION_MAKING_HPP__
 
 #include "framework/include/SandboxApplication.h"
 
-class DemoTest : public SandboxApplication
+class DemoDecisionMaking : public SandboxApplication
 {
 public:
-    DemoTest(void);
+    DemoDecisionMaking();
 
-    virtual ~DemoTest(void);
+    virtual ~DemoDecisionMaking();
 
     virtual void Initialize();
 
 private:
-    DemoTest(const DemoTest&);
-    DemoTest& operator=(const DemoTest&);
+    DemoDecisionMaking(const DemoDecisionMaking&);
+    DemoDecisionMaking& operator=(const DemoDecisionMaking&);
 };
 
 #endif

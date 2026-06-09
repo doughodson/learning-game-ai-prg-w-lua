@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_2_movement/include/DemoMovement.h"
+#include "chapter_2_movement/include/DemoMovement.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

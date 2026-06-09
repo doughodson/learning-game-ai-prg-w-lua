@@ -1,4 +1,4 @@
-#include "my_sandbox/include/MySandBox.h"
+#include "my_sandbox/include/MySandBox.hpp"
 #include "framework/include/LuaScriptUtilities.h"
 
 MySandBox::MySandBox(void) : SandboxApplication("My Sandbox")

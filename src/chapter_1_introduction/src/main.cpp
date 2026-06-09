@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_1_introduction/include/DemoIntroduction.h"
+#include "chapter_1_introduction/include/DemoIntroduction.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN

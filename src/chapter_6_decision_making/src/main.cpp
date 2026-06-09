@@ -21,7 +21,7 @@
  *  distribution.
  */
 
-#include "chapter_6_decision_making/include/DemoDecisionMaking.h"
+#include "chapter_6_decision_making/include/DemoDecisionMaking.hpp"
 #include "ogre3d/include/OgreException.h"
 
 #define WIN32_LEAN_AND_MEAN
