@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_LUA_FILE_PTR_HPP__
 #define __FRAMEWORK_LUA_FILE_PTR_HPP__
 
-#include "framework/include/LuaFile.h"
+#include "framework/include/LuaFile.hpp"
 #include "ogre3d/include/OgreResource.h"
 #include "ogre3d/include/OgreSharedPtr.h"
 

@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_GAME_OBJECT_HPP__
 #define __FRAMEWORK_GAME_OBJECT_HPP__
 
-#include "framework/include/Object.h"
+#include "framework/include/Object.hpp"
 #include "opensteer/include/Obstacle.h"
 
 class Agent;

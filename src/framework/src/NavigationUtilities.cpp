@@ -21,13 +21,13 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Agent.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/MeshUtilities.h"
-#include "framework/include/NavigationUtilities.h"
-#include "framework/include/SandboxObject.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/MeshUtilities.hpp"
+#include "framework/include/NavigationUtilities.hpp"
+#include "framework/include/SandboxObject.hpp"
 
 namespace
 {

@@ -21,9 +21,9 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Object.h"
+#include "framework/include/Object.hpp"
 
 Object::Object(const unsigned int objectId, const ObjectType type)
     : objectId_(objectId), objectType_(type)

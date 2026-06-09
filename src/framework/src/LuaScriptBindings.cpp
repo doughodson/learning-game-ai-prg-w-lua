@@ -21,27 +21,27 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/AgentUtilities.h"
-#include "framework/include/AnimationUtilities.h"
-#include "framework/include/DebugDrawer.h"
-#include "framework/include/Event.h"
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapUtilities.h"
-#include "framework/include/LuaScriptBindings.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/NavigationUtilities.h"
-#include "framework/include/ParticleUtilities.h"
-#include "framework/include/PhysicsUtilities.h"
+#include "framework/include/AgentUtilities.hpp"
+#include "framework/include/AnimationUtilities.hpp"
+#include "framework/include/DebugDrawer.hpp"
+#include "framework/include/Event.hpp"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapUtilities.hpp"
+#include "framework/include/LuaScriptBindings.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/NavigationUtilities.hpp"
+#include "framework/include/ParticleUtilities.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
 // TODO(David Young): Bindings shouldn't include Sandbox.
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 // end of TODO
 // TODO(David Young): Bindings shouldn't include SandboxObject.
-#include "framework/include/SandboxObject.h"
+#include "framework/include/SandboxObject.hpp"
 // end of TODO
-#include "framework/include/SandboxUtilities.h"
-#include "framework/include/UserInterfaceUtilities.h"
+#include "framework/include/SandboxUtilities.hpp"
+#include "framework/include/UserInterfaceUtilities.hpp"
 
 /**
  * @remarks

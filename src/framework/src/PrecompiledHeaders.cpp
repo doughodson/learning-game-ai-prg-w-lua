@@ -21,4 +21,4 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"

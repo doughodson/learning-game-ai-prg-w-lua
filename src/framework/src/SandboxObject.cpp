@@ -21,12 +21,12 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/PhysicsUtilities.h"
-#include "framework/include/SandboxUtilities.h"
-#include "framework/include/SandboxObject.h"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
+#include "framework/include/SandboxUtilities.hpp"
+#include "framework/include/SandboxObject.hpp"
 
 SandboxObject::SandboxObject(
     const unsigned int objectId,

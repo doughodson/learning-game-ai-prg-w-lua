@@ -23,7 +23,7 @@
 
 #include "chapter_7_knowledge/include/DemoKnowledge.hpp"
 
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 
 DemoKnowledge::DemoKnowledge()
     : SandboxApplication(

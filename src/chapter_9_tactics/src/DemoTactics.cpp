@@ -23,7 +23,7 @@
 
 #include "chapter_9_tactics/include/DemoTactics.hpp"
 
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 
 DemoTactics::DemoTactics()
     : SandboxApplication(

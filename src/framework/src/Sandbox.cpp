@@ -21,25 +21,25 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Agent.h"
-#include "framework/include/AgentUtilities.h"
-#include "framework/include/AnimationUtilities.h"
-#include "framework/include/Collision.h"
-#include "framework/include/Event.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapDrawer.h"
-#include "framework/include/NavigationMesh.h"
-#include "framework/include/PhysicsUtilities.h"
-#include "framework/include/PhysicsWorld.h"
-#include "framework/include/Sandbox.h"
-#include "framework/include/SandboxObject.h"
-#include "framework/include/SandboxUtilities.h"
-#include "framework/include/UserInterface.h"
-#include "framework/include/UserInterfaceComponent.h"
-#include "framework/include/UserInterfaceUtilities.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/AgentUtilities.hpp"
+#include "framework/include/AnimationUtilities.hpp"
+#include "framework/include/Collision.hpp"
+#include "framework/include/Event.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapDrawer.hpp"
+#include "framework/include/NavigationMesh.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
+#include "framework/include/PhysicsWorld.hpp"
+#include "framework/include/Sandbox.hpp"
+#include "framework/include/SandboxObject.hpp"
+#include "framework/include/SandboxUtilities.hpp"
+#include "framework/include/UserInterface.hpp"
+#include "framework/include/UserInterfaceComponent.hpp"
+#include "framework/include/UserInterfaceUtilities.hpp"
 
 namespace
 {

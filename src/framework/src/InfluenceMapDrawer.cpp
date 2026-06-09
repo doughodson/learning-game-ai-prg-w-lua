@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapDrawer.h"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapDrawer.hpp"
 
 inline static float interpolate(
     const float to, const float from, const float percent)

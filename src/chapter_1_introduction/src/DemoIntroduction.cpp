@@ -22,7 +22,7 @@
  */
 
 #include "chapter_1_introduction/include/DemoIntroduction.hpp"
-#include "framework/include/LuaScriptUtilities.h"
+#include "framework/include/LuaScriptUtilities.hpp"
 
 Ogre::AnimationState* state = NULL;
 Ogre::AnimationState* state2 = NULL;

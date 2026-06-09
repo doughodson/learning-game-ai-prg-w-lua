@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/UserInterface.h"
-#include "framework/include/UserInterfaceComponent.h"
+#include "framework/include/UserInterface.hpp"
+#include "framework/include/UserInterfaceComponent.hpp"
 
 #define DEFAULT_ATLAS "fonts/dejavu/dejavu"
 

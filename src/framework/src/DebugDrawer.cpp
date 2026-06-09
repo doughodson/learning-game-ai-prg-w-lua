@@ -32,9 +32,9 @@
  * http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Debug+Drawing+Utility+Class
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/DebugDrawer.h"
+#include "framework/include/DebugDrawer.hpp"
 
 IcoSphere::IcoSphere()
     : index(0)

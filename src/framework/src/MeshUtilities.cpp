@@ -21,9 +21,9 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/MeshUtilities.h"
+#include "framework/include/MeshUtilities.hpp"
 
 RawMesh::RawMesh(
     float* const vertexBuffer,

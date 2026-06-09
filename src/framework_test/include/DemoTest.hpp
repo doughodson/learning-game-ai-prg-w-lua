@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_TEST_HPP__
 #define __FRAMEWORK_TEST_HPP__
 
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.hpp"
 
 class DemoTest : public SandboxApplication
 {

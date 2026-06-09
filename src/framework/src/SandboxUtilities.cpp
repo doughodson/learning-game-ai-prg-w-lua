@@ -21,23 +21,23 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Agent.h"
-#include "framework/include/AgentUtilities.h"
-#include "framework/include/Collision.h"
-#include "framework/include/Event.h"
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapUtilities.h"
-#include "framework/include/LuaFileManager.h"
-#include "framework/include/LuaFilePtr.h"
-#include "framework/include/LuaScriptBindings.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/NavigationMesh.h"
-#include "framework/include/PhysicsUtilities.h"
-#include "framework/include/Sandbox.h"
-#include "framework/include/SandboxObject.h"
-#include "framework/include/SandboxUtilities.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/AgentUtilities.hpp"
+#include "framework/include/Collision.hpp"
+#include "framework/include/Event.hpp"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapUtilities.hpp"
+#include "framework/include/LuaFileManager.hpp"
+#include "framework/include/LuaFilePtr.hpp"
+#include "framework/include/LuaScriptBindings.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/NavigationMesh.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
+#include "framework/include/Sandbox.hpp"
+#include "framework/include/SandboxObject.hpp"
+#include "framework/include/SandboxUtilities.hpp"
 
 namespace {
 const luaL_Reg SandboxFunctions[] =

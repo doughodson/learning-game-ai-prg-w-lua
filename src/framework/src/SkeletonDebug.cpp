@@ -34,9 +34,9 @@
  * The source code from the wiki has been modified and altered.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/SkeletonDebug.h"
+#include "framework/include/SkeletonDebug.hpp"
 
 Ogre::String SkeletonDebug::axesName = "SkeletonDebug/AxesMesh";
 Ogre::String SkeletonDebug::axesMeshName = "SkeletonDebug/AxesMesh";

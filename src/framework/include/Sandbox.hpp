@@ -27,7 +27,7 @@
 #include <map>
 #include <vector>
 
-#include "framework/include/Object.h"
+#include "framework/include/Object.hpp"
 #include "ogre3d/include/OgreTimer.h"
 
 struct lua_State;

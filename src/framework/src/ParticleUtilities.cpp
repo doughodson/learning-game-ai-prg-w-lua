@@ -21,9 +21,9 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/ParticleUtilities.h"
+#include "framework/include/ParticleUtilities.hpp"
 
 Ogre::NameGenerator ParticleUtilities::nameGenerator_("UnnamedParticle_");
 

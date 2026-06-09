@@ -21,20 +21,20 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
 // TODO(David Young): Temp includes
-#include "framework/include/Agent.h"
-#include "framework/include/AgentUtilities.h"
-#include "framework/include/AnimationUtilities.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/AgentUtilities.hpp"
+#include "framework/include/AnimationUtilities.hpp"
 // end of TODO
 
-#include "framework/include/LuaFileManager.h"
-#include "framework/include/LuaFilePtr.h"
-#include "framework/include/LuaScriptBindings.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/Sandbox.h"
-#include "framework/include/SandboxObject.h"
+#include "framework/include/LuaFileManager.hpp"
+#include "framework/include/LuaFilePtr.hpp"
+#include "framework/include/LuaScriptBindings.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/Sandbox.hpp"
+#include "framework/include/SandboxObject.hpp"
 
 #define DEFAULT_MATERIAL "White"
 

@@ -21,16 +21,16 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Agent.h"
-#include "framework/include/AgentGroup.h"
-#include "framework/include/AgentUtilities.h"
-#include "framework/include/AnimationUtilities.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/PhysicsUtilities.h"
-#include "framework/include/SandboxObject.h"
-#include "framework/include/SandboxUtilities.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/AgentGroup.hpp"
+#include "framework/include/AgentUtilities.hpp"
+#include "framework/include/AnimationUtilities.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
+#include "framework/include/SandboxObject.hpp"
+#include "framework/include/SandboxUtilities.hpp"
 
 namespace
 {

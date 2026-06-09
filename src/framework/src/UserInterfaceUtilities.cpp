@@ -21,12 +21,12 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/LuaScriptBindings.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/UserInterfaceComponent.h"
-#include "framework/include/UserInterfaceUtilities.h"
+#include "framework/include/LuaScriptBindings.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/UserInterfaceComponent.hpp"
+#include "framework/include/UserInterfaceUtilities.hpp"
 
 namespace
 {

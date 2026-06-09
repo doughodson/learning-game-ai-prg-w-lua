@@ -21,9 +21,9 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/AgentPath.h"
+#include "framework/include/AgentPath.hpp"
 
 AgentPath::AgentPath() : PolylinePathway()
 {

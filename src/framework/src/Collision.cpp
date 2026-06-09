@@ -21,9 +21,9 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Collision.h"
+#include "framework/include/Collision.hpp"
 
 Collision::Collision(
     const btRigidBody* objectA,

@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapUtilities.h"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapUtilities.hpp"
 
 InfluenceMap::InfluenceMap(
     const InfluenceMapConfig& config, const Ogre::SceneNode& mesh) {

@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Object.h"
-#include "framework/include/PhysicsUtilities.h"
+#include "framework/include/Object.hpp"
+#include "framework/include/PhysicsUtilities.hpp"
 
 namespace
 {

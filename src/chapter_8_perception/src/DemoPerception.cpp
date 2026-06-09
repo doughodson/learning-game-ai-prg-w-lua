@@ -23,7 +23,7 @@
 
 #include "chapter_8_perception/include/DemoPerception.hpp"
 
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 
 DemoPerception::DemoPerception()
     : SandboxApplication(

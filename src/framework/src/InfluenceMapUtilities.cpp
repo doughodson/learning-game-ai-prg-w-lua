@@ -21,13 +21,13 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/InfluenceMap.h"
-#include "framework/include/InfluenceMapUtilities.h"
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/MeshUtilities.h"
-#include "framework/include/TriangleBoxIntersection.h"
+#include "framework/include/InfluenceMap.hpp"
+#include "framework/include/InfluenceMapUtilities.hpp"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/MeshUtilities.hpp"
+#include "framework/include/TriangleBoxIntersection.hpp"
 
 inline static float GetInfluenceAtCell(
     const InfluenceMapGrid& grid,

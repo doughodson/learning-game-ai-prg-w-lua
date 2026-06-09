@@ -1,5 +1,5 @@
 #include "my_sandbox/include/MySandBox.hpp"
-#include "framework/include/LuaScriptUtilities.h"
+#include "framework/include/LuaScriptUtilities.hpp"
 
 MySandBox::MySandBox(void) : SandboxApplication("My Sandbox")
 {

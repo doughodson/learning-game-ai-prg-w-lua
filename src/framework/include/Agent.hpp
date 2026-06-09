@@ -26,8 +26,8 @@
 
 #include <vector>
 
-#include "framework/include/AgentPath.h"
-#include "framework/include/Object.h"
+#include "framework/include/AgentPath.hpp"
+#include "framework/include/Object.hpp"
 #include "ogre3d/include/OgrePrerequisites.h"
 #include "opensteer/include/AbstractVehicle.h"
 #include "opensteer/include/LocalSpace.h"

@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/DebugDrawer.h"
-#include "framework/include/PhysicsDebugDraw.h"
+#include "framework/include/DebugDrawer.hpp"
+#include "framework/include/PhysicsDebugDraw.hpp"
 
 PhysicsDebugDraw::PhysicsDebugDraw()
     : btIDebugDraw(),

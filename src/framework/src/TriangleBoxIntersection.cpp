@@ -4,7 +4,7 @@
  * http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/code/
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
 /********************************************************/
 /* AABB-triangle overlap test code                      */

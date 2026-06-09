@@ -1,7 +1,7 @@
 project( "framework" )
 	kind( "StaticLib" )
 	location( "../"..  _ACTION .. "/projects/framework" )
-	pchheader( "PrecompiledHeaders.h" )
+	pchheader( "PrecompiledHeaders.hpp" )
 	pchsource( "../../src/framework/src/PrecompiledHeaders.cpp" )
 	buildoptions( { "/Zm256" } )
 	includedirs( {

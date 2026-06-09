@@ -24,7 +24,7 @@
 #ifndef __CHAPTER_7_KNOWLEDGE_HPP__
 #define __CHAPTER_7_KNOWLEDGE_HPP__
 
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.hpp"
 
 class DemoKnowledge : public SandboxApplication
 {

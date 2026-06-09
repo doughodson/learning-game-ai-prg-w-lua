@@ -21,11 +21,11 @@
 *  distribution.
 */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/LuaScriptUtilities.h"
-#include "framework/include/NavigationMesh.h"
-#include "framework/include/NavigationUtilities.h"
+#include "framework/include/LuaScriptUtilities.hpp"
+#include "framework/include/NavigationMesh.hpp"
+#include "framework/include/NavigationUtilities.hpp"
 
 Ogre::NameGenerator NavigationMesh::debugNameGenerator("debugNavMesh");
 

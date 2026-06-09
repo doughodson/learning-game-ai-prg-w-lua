@@ -24,7 +24,7 @@
 #ifndef __CHAPTER_5_NAVIGATION_HPP__
 #define __CHAPTER_5_NAVIGATION_HPP__
 
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.hpp"
 
 class DemoNavigation : public SandboxApplication
 {

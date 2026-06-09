@@ -23,16 +23,16 @@
 
 #include "chapter_5_navigation/include/DemoNavigation.hpp"
 
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 #include "ogre3d_gorilla/include/Gorilla.h"
 
 #include "detour/include/DetourNavMeshQuery.h"
 #include "recast/include/Recast.h"
-#include "framework/include/NavigationUtilities.h"
+#include "framework/include/NavigationUtilities.hpp"
 #include "ogre3d/include/OgreManualObject.h"
-#include "framework/include/DebugDrawer.h"
-#include "framework/include/UserInterface.h"
-#include "framework/include/UserInterfaceComponent.h"
+#include "framework/include/DebugDrawer.hpp"
+#include "framework/include/UserInterface.hpp"
+#include "framework/include/UserInterfaceComponent.hpp"
 
 DemoNavigation::DemoNavigation()
     : SandboxApplication(

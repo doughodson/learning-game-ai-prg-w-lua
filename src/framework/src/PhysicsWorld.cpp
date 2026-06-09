@@ -21,11 +21,11 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Collision.h"
-#include "framework/include/PhysicsDebugDraw.h"
-#include "framework/include/PhysicsWorld.h"
+#include "framework/include/Collision.hpp"
+#include "framework/include/PhysicsDebugDraw.hpp"
+#include "framework/include/PhysicsWorld.hpp"
 
 PhysicsWorld::PhysicsWorld()
     : dynamicsWorld_(NULL),

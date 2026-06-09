@@ -21,11 +21,11 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/BaseApplication.h"
-#include "framework/include/DebugDrawer.h"
-#include "framework/include/ObfuscatedZip.h"
+#include "framework/include/BaseApplication.hpp"
+#include "framework/include/DebugDrawer.hpp"
+#include "framework/include/ObfuscatedZip.hpp"
 
 BaseApplication::BaseApplication(const Ogre::String& applicationTitle)
     : root_(NULL),

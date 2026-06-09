@@ -21,13 +21,13 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/DebugDrawer.h"
-#include "framework/include/LuaFileManager.h"
-#include "framework/include/LuaFilePtr.h"
-#include "framework/include/Sandbox.h"
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/DebugDrawer.hpp"
+#include "framework/include/LuaFileManager.hpp"
+#include "framework/include/LuaFilePtr.hpp"
+#include "framework/include/Sandbox.hpp"
+#include "framework/include/SandboxApplication.hpp"
 
 SandboxApplication::SandboxApplication(const Ogre::String& applicationTitle)
     : BaseApplication(applicationTitle),

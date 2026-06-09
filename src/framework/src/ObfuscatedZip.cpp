@@ -32,9 +32,9 @@
  * http://www.ogre3d.org/tikiwiki/Obfuscated+Zip
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/ObfuscatedZip.h"
+#include "framework/include/ObfuscatedZip.hpp"
 
 // Change this magic number to a value of your choosing.
 static const int xor_value = 0x1EE7;

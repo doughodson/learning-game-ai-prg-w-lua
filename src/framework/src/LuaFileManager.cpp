@@ -21,11 +21,11 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/LuaFile.h"
-#include "framework/include/LuaFilePtr.h"
-#include "framework/include/LuaFileManager.h"
+#include "framework/include/LuaFile.hpp"
+#include "framework/include/LuaFilePtr.hpp"
+#include "framework/include/LuaFileManager.hpp"
 
 template<> LuaFileManager *Ogre::Singleton<LuaFileManager>::msSingleton = 0;
 

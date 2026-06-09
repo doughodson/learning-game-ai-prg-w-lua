@@ -1,4 +1,4 @@
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.hpp"
 
 class MySandBox : public SandboxApplication
 {

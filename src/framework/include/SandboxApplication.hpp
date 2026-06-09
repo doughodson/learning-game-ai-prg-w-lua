@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_SANDBOX_APPLICATION_HPP__
 #define __FRAMEWORK_SANDBOX_APPLICATION_HPP__
 
-#include "framework/include/BaseApplication.h"
+#include "framework/include/BaseApplication.hpp"
 #include "ogre3d/include/OgreString.h"
 #include "ogre3d/include/OgreTimer.h"
 

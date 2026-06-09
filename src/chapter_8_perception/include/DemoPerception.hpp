@@ -24,7 +24,7 @@
 #ifndef __CHAPTER_8_PERCEPTION_HPP__
 #define __CHAPTER_8_PERCEPTION_HPP__
 
-#include "framework/include/SandboxApplication.h"
+#include "framework/include/SandboxApplication.hpp"
 
 class DemoPerception : public SandboxApplication
 {

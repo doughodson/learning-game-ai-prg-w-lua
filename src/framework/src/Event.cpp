@@ -21,9 +21,9 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Event.h"
+#include "framework/include/Event.hpp"
 
 Event::Event(const Ogre::String& eventType)
     : eventType_(eventType) {

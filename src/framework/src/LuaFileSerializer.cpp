@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/LuaFile.h"
-#include "framework/include/LuaFileSerializer.h"
+#include "framework/include/LuaFile.hpp"
+#include "framework/include/LuaFileSerializer.hpp"
 
 LuaFileSerializer::LuaFileSerializer() {
 }

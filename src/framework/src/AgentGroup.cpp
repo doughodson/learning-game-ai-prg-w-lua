@@ -21,10 +21,10 @@
  *  distribution.
  */
 
-#include "PrecompiledHeaders.h"
+#include "PrecompiledHeaders.hpp"
 
-#include "framework/include/Agent.h"
-#include "framework/include/AgentGroup.h"
+#include "framework/include/Agent.hpp"
+#include "framework/include/AgentGroup.hpp"
 
 AgentGroup::AgentGroup() : OpenSteer::AVGroup()
 {

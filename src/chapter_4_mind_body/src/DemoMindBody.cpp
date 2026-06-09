@@ -23,7 +23,7 @@
 
 #include "chapter_4_mind_body/include/DemoMindBody.hpp"
 
-#include "framework/include/Sandbox.h"
+#include "framework/include/Sandbox.hpp"
 
 DemoMindBody::DemoMindBody()
     : SandboxApplication(
