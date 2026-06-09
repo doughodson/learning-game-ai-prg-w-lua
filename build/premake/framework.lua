@@ -17,7 +17,7 @@ project( "framework" )
 	buildoptions( { "/I \"$(DXSDK_DIR)/Include/\"" } )
 	configuration( { "*" } )
 	files( {
-		"../../src/framework/include/**.h",
+		"../../src/framework/include/**.hpp",
 		"../../src/framework/src/**.cpp",
 		"../../src/framework/script/**.lua"
 	} )

@@ -116,7 +116,7 @@ project( projectName )
 	-- TODO(David Young 6-8-13): the current premake-dev doesn't support
 	-- %{prj.name} within "files"
 	files( {
-		"../../src/" .. projectName .. "/include/**.h",
+		"../../src/" .. projectName .. "/include/**.hpp",
 		"../../src/" .. projectName .. "/src/**.cpp",
 		"../../src/" .. projectName .. "/script/**.lua"
 	} )
